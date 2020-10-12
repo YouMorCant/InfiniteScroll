@@ -12,7 +12,7 @@ let photosArray = [];
 
 //Unsplash API
 //set api parameters
-const maxPhotos = 30;
+const maxPhotos = 5;
 const apiKey = 'tLzlx1GofWGatxwRYXwnqq1iARY_8lumv0U3KiW9KU4';
 const collection = '';
 //composite url for api
@@ -24,6 +24,7 @@ function imageLoaded() {
     if (imgsLoaded === totalimgs) {
         ready = true;
         loader.hidden = true;
+        maxPhotos = 30;
     }
 }
 
